@@ -1,8 +1,6 @@
 #!/bin/sh
 #
-# Homebrew
-#
-# This installs ZSH packages from Homebrew.
+# This installs ZSH packages.
 
 # Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

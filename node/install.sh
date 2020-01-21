@@ -9,5 +9,8 @@
 #### INSTALL NODE / NPM
 brew install node
 
+#### NPM global packages
+npm i -g yarn
+
 #### INSTALL NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash

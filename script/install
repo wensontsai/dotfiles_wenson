@@ -1,7 +1,57 @@
 #!/usr/bin/env bash
 #
-# Run all dotfiles installers.
 
+# (1) VITAL DEPENDENCIES THAT COME FIRST =================================
+
+#### JDK for `apt` command ####
+# https://www.chrisjmendez.com/2018/10/14/how-to-install-java-on-osx-using-homebrew/
+brew cask install java
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk8
+brew cask info java
+
+#### CMAKE ####
+brew install cmake
+
+# #### Sublime 3 ####
+brew cask install sublime-text
+# #### 	+ SYMLINK SUBL FOR SUBLIME
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+
+#  ~!~!~!~!~! #### Install Sublime User Settings
+
+
+# #### iTerm2 ####
+brew cask install iterm2
+
+# #### Spectacle window management ####
+brew cask install spectacle
+
+# #### Alfred ####
+brew cask install alfred
+
+# # #### Flux ####  -- APPLE HAS NATIVE FLUX NOW..
+# brew cask install flux
+
+
+
+# ~!~!~!~~!!~ # INSTALL THROUGH APP STORE !
+# #### Amphetamine
+
+
+
+# ~!~!~!~! (3) LOAD .zshrc INTO SHELL FOR PATHS, ETC.
+# Oh-My-ZSH
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Prompt
+# PROMPT='☕ %F{red}(☝ ՞ਊ ՞)☝ %(!.%{$fg[red]%}.%{$fg_bold[cyan]%}) %~%{$fg_bold[yellow]%} $(git_prompt_info)%{$reset_color%} '
+
+
+
+# (4) ITERATE THROUGH FOLDERS AND INSTALL ALL `install.sh` files =========
+# Run all dotfiles installers.
 set -e
 
 cd "$(dirname $0)"/..

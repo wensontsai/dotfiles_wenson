@@ -64,3 +64,14 @@ cd "$(dirname $0)"/..
 
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+
+
+# ~!~!~!~! (5) Add GITHUB CREDS.
+# - Generate SSH keys:
+# $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+# - Copy:
+# pbcopy < ~/.ssh/id_rsa.pub
+# - Start SSH agent:
+# eval "$(ssh-agent -s)"
+# - Things get hairy...
+# https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent

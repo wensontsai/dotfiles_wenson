@@ -31,6 +31,12 @@ brew cask install spectacle
 # #### Alfred ####
 brew cask install alfred
 
+# #### Chrome ####
+brew cask install google-chrome
+
+# #### Firefox ####
+brew cask install firefox
+
 # # #### Flux ####  -- APPLE HAS NATIVE FLUX NOW..
 # brew cask install flux
 

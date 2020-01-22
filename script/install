@@ -13,6 +13,9 @@ brew cask info java
 #### CMAKE ####
 brew install cmake
 
+#### VSCODE ####
+brew cask install visual-studio-code
+
 #### SUBLIME 3 ####
 brew cask install sublime-text
 # + Symlink `subl` command

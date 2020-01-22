@@ -1,10 +1,8 @@
 {
-    "color_scheme": "",
+    "color_scheme": "Packages/User/Oceanic Next.tmTheme",
     "folder_exclude_patterns":
     [
-        "build",
-        "_build",
-        "Install"
+
     ],
     "font_size": 8,
     "format_on_save": true,

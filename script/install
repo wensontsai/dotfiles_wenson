@@ -13,65 +13,70 @@ brew cask info java
 #### CMAKE ####
 brew install cmake
 
-# #### Sublime 3 ####
+#### SUBLIME 3 ####
 brew cask install sublime-text
-# #### 	+ SYMLINK SUBL FOR SUBLIME
+# + Symlink `subl` command
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+# + Copy over 'sublime/sublime_3_user_settings.json' to `Packages/User/Preferences.sublime-settings
+cp ./sublime/sublime_3_user_settings.json /Users/makerbraut/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+# + Copy over Oceanic Next Theme
+cp ./sublime/Oceanic\ Next.tmTheme /Users/makerbraut/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
 
-#  ~!~!~!~!~! #### Install Sublime User Settings
-
-
-# #### iTerm2 ####
+#### iTerm2 ####
 brew cask install iterm2
 
-# #### Spectacle window management ####
+#### Spectacle window management ####
 brew cask install spectacle
 
-# #### Alfred ####
+#### Alfred ####
 brew cask install alfred
 
-# #### Chrome ####
+#### Chrome ####
 brew cask install google-chrome
 
-# #### Firefox ####
+#### Firefox ####
 brew cask install firefox
 
-# # #### Flux ####  -- APPLE HAS NATIVE FLUX NOW..
-# brew cask install flux
 
-
-
-# ~!~!~!~~!!~ # INSTALL THROUGH APP STORE !
-# #### Amphetamine
-
-
-
-# ~!~!~!~! (3) LOAD .zshrc INTO SHELL FOR PATHS, ETC.
-# Oh-My-ZSH
+# (3) LOAD ZSH / OH-MY-ZSH
+# + Install Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Prompt
-# PROMPT='☕ %F{red}(☝ ՞ਊ ՞)☝ %(!.%{$fg[red]%}.%{$fg_bold[cyan]%}) %~%{$fg_bold[yellow]%} $(git_prompt_info)%{$reset_color%} '
-
+# + Copy over `zsh/simple.zsh-theme` to `~/.oh-my-zsh/themes/simple.zsh-theme`
+cp ./zsh/simple.zsh-theme ~/.oh-my-zsh/themes/simple.zsh-theme
+# + Source it.
+source ~/.zshrc
 
 
 # (4) ITERATE THROUGH FOLDERS AND INSTALL ALL `install.sh` files =========
 # Run all dotfiles installers.
 set -e
-
 cd "$(dirname $0)"/..
 
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
 
-# ~!~!~!~! (5) Add GITHUB CREDS.
-# - Generate SSH keys:
+# (5) Add Github creds
+# + Generate SSH keys:
 # $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-# - Copy:
+# + Copy:
 # pbcopy < ~/.ssh/id_rsa.pub
-# - Start SSH agent:
+# + Start SSH agent:
 # eval "$(ssh-agent -s)"
-# - Things get hairy...
+# + Things get hairy...
 # https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+
+# (6) OTHER:
+# INSTALL THROUGH APP STORE:
+# #### Amphetamine
+
+# ADJUST SETTINGS:
+# + auto hide dock
+# + swap Ctrl and CapsLock keys
+# + set up hot corners
+# + max out speeds of trackpad and mouse
+# + turn off Siri
+
+

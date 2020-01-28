@@ -1,0 +1,8 @@
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.minimap.enabled": false
+}

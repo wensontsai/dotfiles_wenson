@@ -1,25 +1,44 @@
 
-#### MAKE SURE THIS PATH IS RIGHT FOR .zshrc TO PIPE IN
+#### MAKE SURE THIS PATH IS RIGHT FOR .zshrc TO PIPE IN =================== ####
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/makerbraut/.oh-my-zsh"
-
-
-#### ALIASES ####
-alias python='/usr/local/bin/python3'
-alias pip='/usr/local/bin/pip3'
+export ZSH="/Users/wensontsai/.oh-my-zsh"
+#### ====================================================================== ####
 
 
 
+#### ----- PATHS ----- ####
+
+# NVM loading
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+# OPENSSL
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 
-#### ============================ Original .zshrc ============================================================
+
+#### ----- ALIASES ----- ####
+
+# Python
+# alias python='/usr/local/bin/python3'
+# alias pip='/usr/local/bin/pip3'
+alias python='/usr/bin/python3'
+alias pip='/usr/bin/pip3'
+
+# asctl
+# alias asctl='as-ctl'
+
+
+
+
+
+#### ============================ Original .zshrc ========================= ####
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/makerbraut/.oh-my-zsh"
+# # Path to your oh-my-zsh installation.
+# export ZSH="/Users/wensontsai/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

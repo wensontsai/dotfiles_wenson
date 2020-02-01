@@ -9,3 +9,10 @@ else
             echo '. $HOME/.ghcup/env' >> "$HOME/.bashrc"
         fi
 fi
+
+#### Stack
+brew install haskell-stack
+
+#### Install ghci
+stack exec -- ghci
+# stack ghci

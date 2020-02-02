@@ -8,3 +8,9 @@
 # code --install-extension ms-azuretools.vscode-docker
 # code --install-extension ms-python.python
 # code --install-extension naumovs.theme-oceanicnext
+
+# find `settings.json` here:
+# /Users/<USER_NAME>/Library/ApplicationSupport/Code/User/settings.json
+
+# find `keybindings.json` here:
+# /Users/<USER_NAME>/Library/ApplicationSupport/Code/User/keybindings.json

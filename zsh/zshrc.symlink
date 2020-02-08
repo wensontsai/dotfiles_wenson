@@ -2,7 +2,7 @@
 #### MAKE SURE THIS PATH IS RIGHT FOR .zshrc TO PIPE IN =================== ####
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/wensontsai/.oh-my-zsh"
+export ZSH="/Users/$USER/.oh-my-zsh"
 #### ====================================================================== ####
 
 
@@ -20,10 +20,10 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 #### ----- ALIASES ----- ####
 
 # Python
-# alias python='/usr/local/bin/python3'
-# alias pip='/usr/local/bin/pip3'
-alias python='/usr/bin/python3'
-alias pip='/usr/bin/pip3'
+alias python='/usr/local/bin/python3'
+alias pip='/usr/local/bin/pip3'
+# alias python='/usr/bin/python3'
+# alias pip='/usr/bin/pip3'
 
 # asctl
 # alias asctl='as-ctl'

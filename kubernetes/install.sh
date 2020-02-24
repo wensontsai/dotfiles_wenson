@@ -19,3 +19,6 @@
 
 # # stern
 # brew install stern
+
+# kubernetes context and namespace in prompt
+# brew install kube-ps1

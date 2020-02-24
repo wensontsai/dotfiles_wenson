@@ -15,6 +15,9 @@ export ZSH="/Users/$USER/.oh-my-zsh"
 # OPENSSL
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
+# Source kube-ps1
+source ~/.dotfiles/kubernetes/kube-ps1.sh
+
 
 
 #### ----- ALIASES ----- ####

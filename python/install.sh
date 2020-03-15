@@ -7,12 +7,10 @@ brew install python
 brew cask install anaconda
 
 ### virtualenv
-pip3 install virtualenv
+python -m pip install virtualenv
 
 ### install python 3.7.4
-pip3 install -U numpy scipy scikit-learn jupyter pandas
+python -m pip install -U numpy scipy scikit-learn jupyter pandas
 
 ### flask.
-pip3 install flask
-
-sudo rm -Rf /Library/Frameworks/Python.framework/Versions/*
+python -m pip install flask

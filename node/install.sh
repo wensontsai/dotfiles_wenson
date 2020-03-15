@@ -17,3 +17,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
 #### Install LTS stable version of Node/ NPM
 nvm install stable
+
+#### ELM
+# npm i create-elm-app -g

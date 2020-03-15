@@ -3,6 +3,9 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$USER/.oh-my-zsh"
+
+# trying to get jupyter notebooks to work...
+# export PATH=$HOME/.local/bin:$PATH
 #### ====================================================================== ####
 
 
@@ -23,8 +26,12 @@ source ~/.dotfiles/kubernetes/kube-ps1.sh
 #### ----- ALIASES ----- ####
 
 # Python
+# --- this one is for home laptop --- 
 alias python='/usr/local/bin/python3'
 alias pip='/usr/local/bin/pip3'
+
+
+# --- this one is for work ---
 # alias python='/usr/bin/python3'
 # alias pip='/usr/bin/pip3'
 

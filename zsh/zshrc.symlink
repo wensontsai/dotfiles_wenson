@@ -39,6 +39,9 @@ alias pip='/usr/local/bin/pip3'
 # alias asctl='as-ctl'
 
 
+# vscode
+alias codesettings='code ~/Library/Application\ Support/Code/User/settings.json'
+
 
 
 

@@ -1,11 +1,13 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": -2,
+    "window.zoomLevel": -1,
     "files.autoSave": "onFocusChange",
     "editor.wordWrapColumn": 100,
     "editor.wordWrap": "on",
     "editor.formatOnPaste": true,
     "editor.minimap.enabled": false,
     "terminal.integrated.inheritEnv": false,
-    "workbench.tree.indent": 25
+    "workbench.tree.indent": 25,
+    "workbench.colorTheme": "Oceanic Next",
+    "workbench.editor.enablePreview": false
 }

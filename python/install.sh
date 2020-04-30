@@ -14,3 +14,10 @@ python -m pip install -U numpy scipy scikit-learn jupyter pandas
 
 ### flask.
 python -m pip install flask
+
+### bunch of Machine Learning packages
+python -m pip install -U future
+python -m pip install -U gensim
+python -m pip install -U opencv-contrib-python
+python -m pip install -U nltk
+python -m pip install -U certifi

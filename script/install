@@ -41,6 +41,9 @@ brew cask install google-chrome
 #### Firefox ####
 brew cask install firefox
 
+#### XCode Command Line tools ####
+xcode-select --install
+
 
 # (3) LOAD ZSH / OH-MY-ZSH
 # + Install Oh-My-ZSH

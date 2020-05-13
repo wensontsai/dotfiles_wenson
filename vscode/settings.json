@@ -1,17 +1,45 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": -2,
     "files.autoSave": "onFocusChange",
+    "editor.formatOnPaste": false,
     "editor.wordWrapColumn": 100,
     "editor.wordWrap": "on",
-    "editor.formatOnPaste": true,
     "editor.minimap.enabled": false,
     "terminal.integrated.inheritEnv": false,
     "workbench.tree.indent": 25,
+    "yaml.schemas": {
+        "file:///Users/wensontsai/.vscode/extensions/atlassian.atlascode-2.5.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.jqlList": [
+        {
+            "id": "d4128bf4-b0b5-4328-9216-3f4054591a59",
+            "enabled": true,
+            "name": "My alphasense Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "fbcf0078-3031-4cdd-9456-fe4eb6287c0b",
+            "monitor": true
+        }
+    ],
     "workbench.colorTheme": "Oceanic Next",
     "workbench.editor.enablePreview": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
+    // Enable per-language
     "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "atlascode.bitbucket.pipelines.explorerEnabled": false,
+    "atlascode.bitbucket.issues.explorerEnabled": false,
+    "atlascode.bitbucket.explorer.refreshInterval": 0,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDelete": false,
+    "python.jediEnabled": false,
+    "editor.matchBrackets": "never"
 }

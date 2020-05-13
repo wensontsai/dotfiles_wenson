@@ -21,3 +21,5 @@ python -m pip install -U gensim
 python -m pip install -U opencv-contrib-python
 python -m pip install -U nltk
 python -m pip install -U certifi
+python -m pip install -U tensorflow
+python -m pip install -U keras

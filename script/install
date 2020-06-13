@@ -18,10 +18,13 @@ brew cask install visual-studio-code
 
 #### SUBLIME 3 ####
 brew cask install sublime-text
+#
 # + Symlink `subl` command
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+#
 # + Copy over 'sublime/sublime_3_user_settings.json' to `Packages/User/Preferences.sublime-settings
 cp ./sublime/sublime_3_user_settings.json /Users/makerbraut/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+#
 # + Copy over Oceanic Next Theme
 cp ./sublime/Oceanic\ Next.tmTheme /Users/makerbraut/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
@@ -51,11 +54,11 @@ brew install kube-ps1
 # (3) LOAD ZSH / OH-MY-ZSH
 # + Install Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#
 # + Copy over `zsh/simple.zsh-theme` to `~/.oh-my-zsh/themes/simple.zsh-theme`
 cp ./zsh/simple.zsh-theme ~/.oh-my-zsh/themes/simple.zsh-theme
 #
 # + Point to "simple" theme and Source it.
-#
 # vim ~/.zshrc -> ZSH_THEME="simple"
 source ~/.zshrc
 
@@ -72,11 +75,20 @@ find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 # (5) Add Github creds
 # + Generate SSH keys:
 # $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+#
 # + Copy:
 # pbcopy < ~/.ssh/id_rsa.pub
+#
 # + Start SSH agent:
 # eval "$(ssh-agent -s)"
-# + Things get hairy...
+#
+# + Add config:
+# touch ~/.ssh/config
+#
+# + Add SSH private key
+# ssh-add -K ~/.ssh/id_rsa
+#
+# + Should things get hairy...
 # https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 
@@ -90,6 +102,7 @@ find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 # - Zoom
 # - Snap Camera
 # - Toby bookmarks
+# - f.lux
 # ----------------
 # - Kubernetes
 # - AWS

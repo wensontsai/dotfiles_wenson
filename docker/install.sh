@@ -1,5 +1,8 @@
-# brew cask install docker       # Install Docker
-# open /Applications/Docker.app  # Start Docker
+# Install Docker
+brew cask install docker
+
+# Start Docker
+# open /Applications/Docker.app
 
 # Docker-Compose
 brew install docker-compose

@@ -41,5 +41,6 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "explorer.confirmDelete": false,
     "python.jediEnabled": false,
-    "editor.matchBrackets": "never"
+    "editor.matchBrackets": "never",
+    "update.mode": "none"
 }

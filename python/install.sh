@@ -15,6 +15,11 @@ python -m pip install -U numpy scipy scikit-learn jupyter pandas
 ### flask.
 python -m pip install flask
 
+### nltk stopwords
+python -m pip install nltk
+python -m nltk.downloader stopwords
+
+
 ### bunch of Machine Learning packages
 python -m pip install -U future
 python -m pip install -U gensim

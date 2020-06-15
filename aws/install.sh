@@ -8,3 +8,6 @@
 
 # Configure AWS
 # https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+
+# aws-iam-authenticator
+brew install aws-iam-authenticator

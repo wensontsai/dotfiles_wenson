@@ -20,3 +20,6 @@ nvm install stable
 
 #### ELM
 # npm i create-elm-app -g
+
+# graphql apollo
+npm i -g apollo

@@ -103,6 +103,7 @@ find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 # - Snap Camera
 # - Toby bookmarks
 # - f.lux
+# - Clocker (menubar world clock) 
 # ----------------
 # - Postman
 # - Kubernetes

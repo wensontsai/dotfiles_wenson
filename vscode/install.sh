@@ -26,6 +26,7 @@ code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
+
 # find `settings.json` here:
 cp -rp ./settings.json /Users/$USER/Library/ApplicationSupport/Code/User/settings.json
 

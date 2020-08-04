@@ -15,11 +15,20 @@ export ZSH="/Users/$USER/.oh-my-zsh"
 # NVM loading
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
+# yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # OPENSSL
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # Source kube-ps1
 source ~/.dotfiles/kubernetes/kube-ps1.sh
+
+# Java versions:
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_252)
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 
 
@@ -146,5 +155,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

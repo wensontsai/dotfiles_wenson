@@ -9,7 +9,7 @@
     "terminal.integrated.inheritEnv": false,
     "workbench.tree.indent": 25,
     "yaml.schemas": {
-        "file:///Users/wensontsai/.vscode/extensions/atlassian.atlascode-2.5.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/wensontsai/.vscode/extensions/atlassian.atlascode-2.6.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "atlascode.jira.jqlList": [
         {
@@ -34,9 +34,6 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[json]": {
-
-    },
     "atlascode.bitbucket.pipelines.explorerEnabled": false,
     "atlascode.bitbucket.issues.explorerEnabled": false,
     "atlascode.bitbucket.explorer.refreshInterval": 0,
@@ -45,6 +42,10 @@
     "explorer.confirmDelete": false,
     "python.jediEnabled": false,
     "editor.matchBrackets": "never",
-    "update.mode": "none",
-    "debug.showInlineBreakpointCandidates": false
+    "typescript.validate.enable": true,
+    "java.semanticHighlighting.enabled": true,
+    "update.mode": "manual",
+    "editor.autoIndent": "none",
+    "typescript.suggest.autoImports": false,
+    "javascript.suggest.autoImports": false,
 }

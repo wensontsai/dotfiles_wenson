@@ -50,6 +50,8 @@ xcode-select --install
 # kubernetes context and namespace in prompt
 brew install kube-ps1
 
+# postgres
+# brew install postgresql
 
 # (3) LOAD ZSH / OH-MY-ZSH
 # + Install Oh-My-ZSH
